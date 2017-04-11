@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74ED3802-DE96-4F12-AD97-9E9197424BB8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ticketmaster.Dsc.Interfaces</RootNamespace>
+    <AssemblyName>Ticketmaster.Dsc.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Autofac.4.1.0\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Hangfire.Core, Version=1.6.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Hangfire.Core.1.6.4\lib\net45\Hangfire.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Data.Edm.5.7.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Data.OData.5.7.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Spatial, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Spatial.5.7.0\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.OData.5.7.0\lib\net45\System.Web.Http.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ticketmaster.Dsc.Scheduling, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Ticketmaster.Dsc.Scheduling.1.0.1.0\lib\net452\Ticketmaster.Dsc.Scheduling.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeploymentServer\BuildStatus.cs" />
+    <Compile Include="DeploymentServer\IConfigurationService.cs" />
+    <Compile Include="DeploymentServer\IMofBuilderService.cs" />
+    <Compile Include="DeploymentServer\ViewModels\ArchiveConfigurationView.cs" />
+    <Compile Include="DeploymentServer\ViewModels\BuildDetailView.cs" />
+    <Compile Include="DeploymentServer\ViewModels\BuildTargetView.cs" />
+    <Compile Include="DeploymentServer\ViewModels\BuildView.cs" />
+    <Compile Include="DeploymentServer\ViewModels\ConfigurationDocumentView.cs" />
+    <Compile Include="DeploymentServer\ViewModels\ConfigurationView.cs" />
+    <Compile Include="DeploymentServer\ViewModels\HttpMethod.cs" />
+    <Compile Include="DscComponentOptions.cs" />
+    <Compile Include="DscManager\DscEventArgs.cs" />
+    <Compile Include="DscManager\DscEventHandler.cs" />
+    <Compile Include="DscManager\IDataInitializer.cs" />
+    <Compile Include="DscManager\IDscEventHandler.cs" />
+    <Compile Include="DscManager\IDscEventManager.cs" />
+    <Compile Include="DscManager\ViewModels\LoggingView.cs" />
+    <Compile Include="Http\EnumerableFormatter.cs" />
+    <Compile Include="Http\EnumerableParameterAttribute.cs" />
+    <Compile Include="Http\JsonTextMediaFormatter.cs" />
+    <Compile Include="Http\OdataQueryable.cs" />
+    <Compile Include="IDscComponentOptions.cs" />
+    <Compile Include="IEnvironmentProperties.cs" />
+    <Compile Include="IViewModel.cs" />
+    <Compile Include="DeploymentServer\ViewModels\JobView.cs" />
+    <Compile Include="Mapping\CollectionToViewPropertyResolver.cs" />
+    <Compile Include="Mapping\DestinationMemberPropertyResolver.cs" />
+    <Compile Include="Mapping\DestinationPropertyFromSourcePropertyResolver.cs" />
+    <Compile Include="Mapping\IViewModelFactory.cs" />
+    <Compile Include="Mapping\Link.cs" />
+    <Compile Include="Http\UrlHelperHandler.cs" />
+    <Compile Include="Mapping\IModel.cs" />
+    <Compile Include="Mapping\IPropertyResolver.cs" />
+    <Compile Include="Mapping\ITypeMapping.cs" />
+    <Compile Include="Mapping\IViewModel.cs" />
+    <Compile Include="Mapping\MappingExtensions.cs" />
+    <Compile Include="Mapping\ModelBase.cs" />
+    <Compile Include="Mapping\ModelPropertyResolver.cs" />
+    <Compile Include="Mapping\PropertyResolverType.cs" />
+    <Compile Include="Mapping\SourceMemberPropertyResolver.cs" />
+    <Compile Include="Mapping\TypeMapping.cs" />
+    <Compile Include="Mapping\TypeMappingResolver.cs" />
+    <Compile Include="Mapping\ViewModelFactory.cs" />
+    <Compile Include="NodeRepository\INodeConfigurationService.cs" />
+    <Compile Include="NodeRepository\RequestModels\ConfigurationPropertyRequest.cs" />
+    <Compile Include="NodeRepository\RequestModels\ConfigurationPropertyUpdateRequest.cs" />
+    <Compile Include="NodeRepository\RequestModels\NodeAgentErrorRequest.cs" />
+    <Compile Include="NodeRepository\RequestModels\NodeRequest.cs" />
+    <Compile Include="NodeRepository\ViewModels\BootstrapOptionsView.cs" />
+    <Compile Include="NodeRepository\ViewModels\BootstrapResultView.cs" />
+    <Compile Include="NodeRepository\ViewModels\ConfigurationPropertyResult.cs" />
+    <Compile Include="NodeRepository\ViewModels\ConfigurationPropertyView.cs" />
+    <Compile Include="NodeRepository\ViewModels\LocalAgentPropertiesView.cs" />
+    <Compile Include="NodeRepository\ViewModels\MaintenanceScheduleView.cs" />
+    <Compile Include="NodeRepository\ViewModels\NodeDetailResult.cs" />
+    <Compile Include="NodeRepository\ViewModels\NodeDetailView.cs" />
+    <Compile Include="NodeRepository\ViewModels\NodeView.cs" />
+    <Compile Include="NodeRepository\ViewModels\PropertyScope.cs" />
+    <Compile Include="NodeRepository\ViewModels\PropertyType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\ConfigurationReportDetailView.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\ConfigurationReportException.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\ConfigurationReportExceptionConverter.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\ConfigurationReportRecordDetailView.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\ConfigurationReportRecordView.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\ConfigurationReportResourceView.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\ConfigurationReportView.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\ConfigurationStatus.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\ConfigurationType.cs" />
+    <Compile Include="ReportingEndpoint\ViewModels\NodeStatusView.cs" />
+    <Compile Include="Views\PagedResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

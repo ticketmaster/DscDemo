@@ -1,0 +1,19 @@
+<StyleCopSettings Version="105">
+  <GlobalSettings>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>dsc</Value>
+      <Value>guid</Value>
+      <Value>owin</Value>
+	  <Value>mof</Value>
+	  <Value>powershell</Value>
+    </CollectionProperty>
+  </GlobalSettings>
+  <Analyzers>
+    <Analyzer AnalyzerId="StyleCop.CSharp.DocumentationRules">
+      <AnalyzerSettings>
+        <StringProperty Name="CompanyName">Ticketmaster</StringProperty>
+        <StringProperty Name="Copyright">Copyright 2015 Ticketmaster</StringProperty>
+      </AnalyzerSettings>
+    </Analyzer>
+  </Analyzers>
+</StyleCopSettings>

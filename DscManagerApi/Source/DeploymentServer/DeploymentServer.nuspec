@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>Mike Walker</authors>
+    <owners>Mike Walker</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>http://git.tm.tmcs/powershell-dsc/credential-repository</projectUrl>
+    <summary>The Credential Repository provides a REST API based framework for storing credentials. Credentials are stored (encrypted) in a database using Entity Framework. This is based on the OWIN framework.</summary>
+    <description>See http://git.tm.tmcs/powershell-dsc/credential-repository.</description>
+    <tags>Deployment DSC OWIN</tags>
+  </metadata>
+</package>

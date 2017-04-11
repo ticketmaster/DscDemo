@@ -1,0 +1,14 @@
+﻿{
+  "ConnectionStrings": [
+    {
+      "ConnectionString": "Data Source=<DatabaseConnectionString>",
+      "Name": "DscManager",
+      "ProviderName": "System.Data.SqlClient"
+    }
+  ],
+  "DeploymentServerOptions": {
+    "$type": "Ticketmaster.Dsc.DeploymentServer.DataModels.DeploymentServerOptions, Ticketmaster.Dsc.DeploymentServer",
+    "DscManagerEndpoint": "https://dsc.domain.local/api/v2"
+  },
+  "ErrorDetailPolicy": "Always"
+}

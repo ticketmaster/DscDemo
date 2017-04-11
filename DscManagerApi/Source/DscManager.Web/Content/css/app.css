@@ -1,0 +1,26 @@
+/*body
+{
+    background-color: #1E1E1E;
+    color: #C1BFB1;
+}*/
+
+body
+{
+    background-color: #F9F9F9;
+    color: #222222;
+}
+
+.highlight
+{
+    background-color: #3F3F46;
+}
+
+.accent
+{
+    color: #009CDE;
+}
+
+.bg-accent
+{
+    background-color: #009CDE;
+}
